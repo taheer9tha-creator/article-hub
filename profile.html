@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Profile | ArticleHub</title>
+
+<link rel="stylesheet"
+href="css/profile.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="icon" href="images/indexfevicon1.png">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="topbar">
+
+<div class="logo">
+
+<a href="index.html">
+
+ArticleHub
+
+</a>
+
+</div>
+
+<nav>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</nav>
+
+</header>
+
+<!-- ================= COVER ================= -->
+
+<section class="cover-section">
+
+<img
+id="coverImage"
+src="https://picsum.photos/1400/350"
+alt="Cover">
+
+</section>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="profile-card">
+
+<div class="profile-header">
+
+<img
+id="profilePhoto"
+src="https://ui-avatars.com/api/?name=User&background=4f46e5&color=fff&size=250"
+alt="Profile">
+
+<div class="profile-info">
+
+<h1>
+
+<span id="profileName">
+
+Loading...
+
+</span>
+
+<span
+id="verifiedBadge"
+class="verified">
+
+✔
+
+</span>
+
+</h1>
+
+<p id="profileBio">
+
+Loading bio...
+
+</p>
+
+<div class="profile-meta">
+
+<span id="profileLocation">
+
+📍 Unknown
+
+</span>
+
+<span id="joinedDate">
+
+📅 Joined
+
+</span>
+
+</div>
+
+<div class="social-links">
+
+<a
+id="websiteLink"
+target="_blank">
+
+🌐 Website
+
+</a>
+
+<a
+id="githubLink"
+target="_blank">
+
+💻 GitHub
+
+</a>
+
+<a
+id="linkedinLink"
+target="_blank">
+
+💼 LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+<div class="profile-actions">
+
+<a
+id="editProfileBtn"
+class="edit-btn"
+href="edit-profile.html">
+
+✏ Edit Profile
+
+</a>
+
+<button
+id="followBtn"
+class="follow-btn">
+
+Follow
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2 id="articleCount">
+
+0
+
+</h2>
+
+<p>
+
+Articles
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="viewCount">
+
+0
+
+</h2>
+
+<p>
+
+Views
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="likeCount">
+
+0
+
+</h2>
+
+<p>
+
+Likes
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= ARTICLES ================= -->
+
+<section class="articles-section">
+
+<h2>
+
+Articles by this Author
+
+</h2>
+
+<div
+id="authorArticles"
+class="articles-grid">
+
+<div class="loading">
+
+Loading articles...
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 ArticleHub. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script
+type="module"
+src="js/profile.js">
+
+</script>
+
+</body>
+
+</html>

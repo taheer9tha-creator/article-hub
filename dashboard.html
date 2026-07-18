@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | ArticleHub</title>
+
+<link rel="stylesheet"
+href="css/dashboard.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="icon" href="images/indexfevicon1.png">
+</head>
+
+<body>
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+<h2>
+
+ArticleHub
+
+</h2>
+
+<ul>
+
+<li class="active">
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="create.html">
+
+✍️ Create Article
+
+</a>
+
+</li>
+
+<li>
+
+<a href="my-articles.html">
+
+📝 My Articles
+
+</a>
+
+</li>
+
+<li>
+
+<a
+id="profileLink"
+href="#">
+
+👤 My Profile
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html">
+
+🌐 View Website
+
+</a>
+
+</li>
+
+<li>
+
+<a
+href="#"
+id="logoutBtn">
+
+🚪 Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- ================= Main ================= -->
+
+<main class="main">
+
+<!-- ================= Header ================= -->
+
+<header class="page-header">
+
+<div>
+
+<h1>
+
+Welcome Back 👋
+
+</h1>
+
+<p>
+
+Manage your articles, monitor your performance and grow your audience.
+
+</p>
+
+</div>
+
+<a
+href="create.html"
+class="new-btn">
+
++ New Article
+
+</a>
+
+</header>
+
+<!-- ================= Statistics ================= -->
+
+<section class="stats">
+
+<div class="card">
+
+<h2 id="totalArticles">
+
+0
+
+</h2>
+
+<p>
+
+Articles
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="publishedArticles">
+
+0
+
+</h2>
+
+<p>
+
+Published
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="totalViews">
+
+0
+
+</h2>
+
+<p>
+
+Views
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="totalLikes">
+
+0
+
+</h2>
+
+<p>
+
+Likes
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= Quick Actions ================= -->
+
+<section class="quick-actions">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+<div class="quick-grid">
+
+<a
+href="create.html"
+class="quick-card">
+
+<div class="quick-icon">
+
+✍️
+
+</div>
+
+<h3>
+
+Create Article
+
+</h3>
+
+<p>
+
+Write and publish a brand-new article.
+
+</p>
+
+</a>
+
+<a
+href="my-articles.html"
+class="quick-card">
+
+<div class="quick-icon">
+
+📝
+
+</div>
+
+<h3>
+
+My Articles
+
+</h3>
+
+<p>
+
+View, edit and delete your published articles.
+
+</p>
+
+</a>
+
+<a
+id="dashboardProfile"
+href="#"
+class="quick-card">
+
+<div class="quick-icon">
+
+👤
+
+</div>
+
+<h3>
+
+My Profile
+
+</h3>
+
+<p>
+
+Update your profile, photo and bio.
+
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= Tips ================= -->
+
+<section class="dashboard-info">
+
+<h2>
+
+Creator Tips
+
+</h2>
+
+<div class="info-box">
+
+<p>
+
+💡 Publish consistently to reach more readers.
+
+</p>
+
+<p>
+
+📸 Use high-quality cover images.
+
+</p>
+
+<p>
+
+🏷 Add relevant categories and tags.
+
+</p>
+
+<p>
+
+📈 Monitor your views and improve your content.
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<script type="module" src="js/auth.js"></script>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>

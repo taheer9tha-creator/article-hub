@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ArticleHub</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="images/indexfevicon1.png">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<a href="index.html">
+
+ArticleHub
+
+</a>
+
+</div>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="index.html" class="active">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#latest">
+
+Latest
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#trending">
+
+Trending
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#categories">
+
+Categories
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Authors
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-actions">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search articles...">
+
+<!-- Login button OR Profile menu inserted by navbar.js -->
+
+<div id="authSection"></div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-text">
+
+<span class="hero-tag">
+
+🚀 Featured Platform
+
+</span>
+
+<h1>
+
+Discover Stories That Inspire
+
+</h1>
+
+<p>
+
+Read high-quality articles written by developers,
+students, researchers, and professionals about
+Technology, Programming, Artificial Intelligence,
+Cybersecurity, Business, Science, Gaming, and much more.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#latest" class="primary-btn">
+
+Explore Articles
+
+</a>
+
+<a href="create.html" class="secondary-btn">
+
+Become an Author
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="https://images.pexels.com/photos/2177427/pexels-photo-2177427.jpeg"
+alt="ArticleHub">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LATEST ARTICLES ================= -->
+
+<section class="featured" id="latest">
+
+<h2>
+
+Latest Articles
+
+</h2>
+
+<div
+class="cards"
+id="articlesContainer">
+
+<!-- Articles loaded dynamically from Firebase -->
+
+</div>
+
+</section>
+
+<!-- ================= TRENDING ================= -->
+
+<section class="trending" id="trending">
+
+<h2>
+
+🔥 Trending Topics
+
+</h2>
+
+<div class="trending-grid">
+
+<div class="trend-card">
+
+<h3>
+
+Artificial Intelligence
+
+</h3>
+
+<p>
+
+Explore the newest AI innovations, machine learning breakthroughs,
+and future technologies shaping tomorrow.
+
+</p>
+
+</div>
+
+<div class="trend-card">
+
+<h3>
+
+Programming
+
+</h3>
+
+<p>
+
+Learn JavaScript, Python, Web Development,
+Firebase, APIs, and software engineering.
+
+</p>
+
+</div>
+
+<div class="trend-card">
+
+<h3>
+
+Cybersecurity
+
+</h3>
+
+<p>
+
+Discover modern security practices,
+ethical hacking, privacy, and digital protection.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories" id="categories">
+
+<h2>
+
+Browse Categories
+
+</h2>
+
+<div class="category-grid">
+
+<div class="category-card">
+
+💻
+
+<h3>Technology</h3>
+
+</div>
+
+<div class="category-card">
+
+🤖
+
+<h3>Artificial Intelligence</h3>
+
+</div>
+
+<div class="category-card">
+
+💡
+
+<h3>Programming</h3>
+
+</div>
+
+<div class="category-card">
+
+🔐
+
+<h3>Cybersecurity</h3>
+
+</div>
+
+<div class="category-card">
+
+📊
+
+<h3>Business</h3>
+
+</div>
+
+<div class="category-card">
+
+🎮
+
+<h3>Gaming</h3>
+
+</div>
+
+<div class="category-card">
+
+🧪
+
+<h3>Science</h3>
+
+</div>
+
+<div class="category-card">
+
+❤️
+
+<h3>Health</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= POPULAR TAGS ================= -->
+
+<section class="tags-section">
+
+<h2>
+
+Popular Tags
+
+</h2>
+
+<div class="tags">
+
+<span>#JavaScript</span>
+<span>#Python</span>
+<span>#AI</span>
+<span>#Firebase</span>
+<span>#Cloudinary</span>
+<span>#HTML</span>
+<span>#CSS</span>
+<span>#Cybersecurity</span>
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+<h2>
+
+Stay Updated
+
+</h2>
+
+<p>
+
+Subscribe to receive the latest articles directly in your inbox.
+
+</p>
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content">
+
+<h2>
+
+ArticleHub
+
+</h2>
+
+<p>
+
+Share knowledge. Learn together. Build the future.
+
+</p>
+
+<div class="footer-links">
+
+<a href="#">About</a>
+
+<a href="#">Authors</a>
+
+<a href="#">Contact</a>
+
+<a href="#">Privacy</a>
+
+<a href="#">Terms</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 ArticleHub. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script type="module" src="js/navbar.js"></script>
+<script type="module" src="js/home.js"></script>
+
+</body>
+</html>

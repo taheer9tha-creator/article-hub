@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Edit Profile | ArticleHub</title>
+
+<link
+rel="stylesheet"
+href="css/edit-profile.css">
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="icon" href="images/indexfevicon1.png">
+</head>
+
+<body>
+
+<!-- ==========================================================
+     HEADER
+========================================================== -->
+
+<header class="topbar">
+
+<div class="logo">
+
+<a href="index.html">
+
+ArticleHub
+
+</a>
+
+</div>
+
+<nav>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+<a
+id="profileLink"
+href="#">
+
+My Profile
+
+</a>
+
+</nav>
+
+</header>
+
+<!-- ==========================================================
+     MAIN
+========================================================== -->
+
+<main class="container">
+
+<h1>
+
+Edit Profile
+
+</h1>
+
+<p class="subtitle">
+
+Update your public profile and see the changes instantly.
+
+</p>
+
+<div class="profile-layout">
+
+<!-- ==========================================================
+     LEFT PANEL
+========================================================== -->
+
+<section class="profile-editor">
+
+<form id="profileForm">
+
+<!-- ================= Cover ================= -->
+
+<div class="cover-section">
+
+<img
+id="coverPreview"
+src="https://picsum.photos/1200/350"
+alt="Cover Image">
+
+<label
+for="coverFile"
+class="upload-area"
+id="coverDropZone">
+
+    <div class="upload-icon">
+
+        🖼️
+
+    </div>
+
+    <div class="upload-title">
+
+        Upload Cover Image
+
+    </div>
+
+    <div class="upload-text">
+
+        Drag & Drop or Click to Browse
+
+    </div>
+
+</label>
+
+<input
+id="coverFile"
+type="file"
+accept="image/*"
+hidden>
+
+</div>
+
+<!-- ================= Avatar ================= -->
+
+<div class="avatar-section">
+
+<img
+id="photoPreview"
+src="https://ui-avatars.com/api/?name=User&background=4f46e5&color=fff&size=300"
+alt="Profile Photo">
+
+<label
+for="photoFile"
+class="upload-area">
+
+<div class="upload-icon">
+
+👤
+
+</div>
+
+<div class="upload-title">
+
+Upload Profile Photo
+
+</div>
+
+<div class="upload-text">
+
+Drag & Drop or Click to Browse
+
+<br>
+
+Square image recommended
+
+</div>
+
+</label>
+
+<input
+id="photoFile"
+type="file"
+accept="image/*"
+hidden>
+
+</div>
+
+<!-- ================= Progress ================= -->
+
+<div class="progress">
+
+<div
+id="uploadProgress"
+class="progress-bar">
+
+</div>
+
+</div>
+
+<!-- ================= Form ================= -->
+
+<div class="form-grid">
+
+<div class="input-group">
+
+<label>
+
+Username
+
+</label>
+
+<input
+id="username"
+type="text"
+placeholder="Enter your username"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Location
+
+</label>
+
+<input
+id="location"
+type="text"
+placeholder="Your location">
+
+</div>
+
+<div class="input-group full">
+
+<label>
+
+Bio
+
+</label>
+
+<textarea
+id="bio"
+rows="5"
+maxlength="250"
+placeholder="Tell readers something about yourself...">
+
+</textarea>
+
+<div class="bio-footer">
+
+<span id="bioCount">
+
+0
+
+</span>
+
+<span>
+
+/250 Characters</span>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Website
+
+</label>
+
+<input
+id="website"
+type="url"
+placeholder="https://yourwebsite.com">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+GitHub
+
+</label>
+
+<input
+id="github"
+type="url"
+placeholder="https://github.com/username">
+
+</div>
+
+<div class="input-group full">
+
+<label>
+
+LinkedIn
+
+</label>
+
+<input
+id="linkedin"
+type="url"
+placeholder="https://linkedin.com/in/username">
+
+</div>
+
+</div>
+
+<!-- Hidden Inputs -->
+
+<input
+id="photo"
+type="hidden">
+
+<input
+id="cover"
+type="hidden">
+
+<!-- ================= Buttons ================= -->
+
+<div class="buttons">
+
+<a
+href="javascript:history.back()"
+class="cancel-btn">
+
+Cancel
+
+</a>
+
+<button
+id="saveBtn"
+type="submit"
+class="save-btn">
+
+<span class="btn-text">
+
+💾 Save Changes
+
+</span>
+
+<span
+class="spinner"
+style="display:none;">
+
+</span>
+
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<!-- ==========================================================
+     RIGHT PANEL
+========================================================== -->
+
+<aside class="profile-preview">
+
+<div class="preview-card">
+
+<div class="preview-cover">
+
+<img
+id="previewCover"
+src="https://picsum.photos/1200/350"
+alt="Cover Preview">
+
+</div>
+
+<div class="preview-body">
+
+<div class="preview-avatar">
+
+<img
+id="previewPhoto"
+src="https://ui-avatars.com/api/?name=User&background=4f46e5&color=fff&size=300"
+alt="Profile Preview">
+
+</div>
+
+<h2
+id="previewUsername"
+class="preview-name">
+
+Username
+
+</h2>
+
+<p
+id="previewLocation"
+class="preview-location">
+
+📍 Your Location
+
+</p>
+
+<p
+id="previewBio"
+class="preview-bio">
+
+Your bio will appear here...
+
+</p>
+
+<div class="preview-links">
+
+<a
+id="previewWebsite"
+href="#"
+target="_blank"
+style="display:none;">
+
+🌐 Website
+
+</a>
+
+<a
+id="previewGithub"
+href="#"
+target="_blank"
+style="display:none;">
+
+GitHub
+
+</a>
+
+<a
+id="previewLinkedin"
+href="#"
+target="_blank"
+style="display:none;">
+
+LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</aside>
+
+</div>
+
+
+</main>
+
+<!-- Crop Modal -->
+
+<div id="cropModal" class="crop-modal">
+
+    <div class="crop-box">
+
+        <img id="cropImage" alt="Crop Image">
+
+        <div class="crop-buttons">
+
+            <button
+                type="button"
+                id="cancelCrop">
+
+                Cancel
+
+            </button>
+
+            <button
+                type="button"
+                id="cropButton">
+
+                Crop Image
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================================
+     IMAGE CROPPER MODAL
+========================================================== -->
+
+<div id="cropModal" class="crop-modal">
+
+    <div class="crop-container">
+
+        <div class="crop-header">
+
+            <h2>Crop Image</h2>
+
+        </div>
+
+        <div class="crop-body">
+
+            <img
+                id="cropImage"
+                src=""
+                alt="Crop Image">
+
+        </div>
+
+        <div class="crop-footer">
+
+            <button
+                id="cancelCrop"
+                type="button">
+
+                Cancel
+
+            </button>
+
+            <button
+                id="cropButton"
+                type="button">
+
+                Crop & Use Image
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
+
+<script
+type="module"
+src="js/edit-profile.js">
+
+</script>
+
+</body>
+
+</html>

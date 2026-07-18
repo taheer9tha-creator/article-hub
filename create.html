@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Article</title>
+
+<link rel="stylesheet" href="css/create.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="images/indexfevicon1.png">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>Create New Article</h1>
+
+<a href="dashboard.html" class="back-btn">
+← Dashboard
+</a>
+
+</header>
+
+<form id="articleForm">
+
+<label>Article Title</label>
+
+<input
+type="text"
+id="title"
+placeholder="Enter article title"
+required>
+
+<label>SEO Slug</label>
+
+<input
+type="text"
+id="slug"
+placeholder="example-my-first-article">
+
+<label>Category</label>
+
+<select id="category">
+
+<option>Technology</option>
+<option>Programming</option>
+<option>Artificial Intelligence</option>
+<option>Cybersecurity</option>
+<option>Science</option>
+<option>Business</option>
+<option>Gaming</option>
+
+</select>
+
+<label>Tags</label>
+
+<input
+type="text"
+id="tags"
+placeholder="AI, HTML, JavaScript">
+
+<!-- Image Upload -->
+
+<label>Featured Image</label>
+
+<input
+type="file"
+id="imageFile"
+accept="image/*">
+
+<!-- Hidden input to store Cloudinary URL -->
+
+<input
+type="hidden"
+id="image">
+
+<label>Short Description</label>
+
+<textarea
+id="description"
+class="small"
+placeholder="Write a short summary..."
+required></textarea>
+
+<label>Article Content</label>
+
+<textarea
+id="content"
+class="large"
+placeholder="Write your article here..."
+required></textarea>
+
+<div class="buttons">
+
+<button
+type="button"
+class="draft">
+
+💾 Save Draft
+
+</button>
+
+<button
+type="submit"
+class="publish">
+
+🚀 Publish Article
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/create.js"></script>
+
+</body>
+</html>

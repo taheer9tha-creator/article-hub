@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Verify Email | ArticleHub</title>
+
+<link
+rel="stylesheet"
+href="css/verify-email.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="verify-container">
+
+    <div class="verify-card">
+
+        <!-- Icon -->
+
+        <div class="verify-icon">
+
+            📧
+
+        </div>
+
+        <!-- Title -->
+
+        <h1>
+
+            Verify Your Email
+
+        </h1>
+
+        <p class="description">
+
+            We've sent a verification link to
+
+        </p>
+
+        <!-- Email -->
+
+        <h2 id="userEmail">
+
+            loading...
+
+        </h2>
+
+        <p class="description">
+
+            Please open your inbox and click the verification link before logging in.
+
+        </p>
+
+        <!-- Buttons -->
+
+        <div class="button-group">
+
+            <button
+            id="resendButton">
+
+                Resend Verification Email
+
+            </button>
+
+            <button
+            id="checkButton"
+            class="primary">
+
+                I've Verified My Email
+
+            </button>
+
+        </div>
+
+        <!-- Timer -->
+
+        <p
+        id="timer"
+        class="timer">
+
+            You can resend another email in 60 seconds.
+
+        </p>
+
+        <!-- Help -->
+
+        <div class="tips">
+
+            <h3>
+
+                Didn't receive the email?
+
+            </h3>
+
+            <ul>
+
+                <li>
+
+                    ✔ Check your Spam folder
+
+                </li>
+
+                <li>
+
+                    ✔ Check your Promotions tab
+
+                </li>
+
+                <li>
+
+                    ✔ Wait at least one minute
+
+                </li>
+
+                <li>
+
+                    ✔ Make sure you entered the correct email
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Status -->
+
+        <div
+        id="statusMessage"
+        class="status">
+
+        </div>
+
+        <!-- Footer -->
+
+        <a
+        href="login.html"
+        class="back-link">
+
+            ← Back to Login
+
+        </a>
+
+    </div>
+
+</div>
+
+<script
+type="module"
+src="js/verify-email.js">
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+/* ==========================================================
+   ArticleHub
+   Verify Email
+========================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+linear-gradient(
+135deg,
+#000000,
+#2c2c2c
+);
+
+padding:25px;
+
+}
+
+/* ==========================================================
+   Card
+========================================================== */
+
+.verify-card{
+
+width:100%;
+
+max-width:560px;
+
+background:#000000;
+
+border-radius:24px;
+
+padding:45px;
+
+text-align:center;
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.08);
+
+animation:fadeUp .45s ease;
+
+}
+
+/* ==========================================================
+   Icon
+========================================================== */
+
+.verify-icon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:48px;
+
+border-radius:50%;
+
+background:#2e4baa;
+
+box-shadow:
+0 10px 30px rgba(79,70,229,.15);
+
+}
+
+/* ==========================================================
+   Title
+========================================================== */
+
+.verify-card h1{
+
+font-size:34px;
+
+font-weight:700;
+
+color:#ffffff;
+
+margin-bottom:12px;
+
+}
+
+/* ==========================================================
+   Description
+========================================================== */
+
+.description{
+
+font-size:15px;
+
+color:#b5b5b5;
+
+line-height:1.8;
+
+margin-bottom:15px;
+
+}
+
+/* ==========================================================
+   Email
+========================================================== */
+
+#userEmail{
+
+font-size:20px;
+
+font-weight:600;
+
+color:#4f46e5;
+
+margin-bottom:25px;
+
+word-break:break-word;
+
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.button-group{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.button-group button{
+
+padding:15px;
+
+font-size:15px;
+
+font-weight:600;
+
+border:none;
+
+border-radius:14px;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+/* Primary */
+
+.primary{
+
+background:#4f46e5;
+
+color:rgb(255, 255, 255);
+
+}
+
+.primary:hover{
+
+background:#4338ca;
+
+transform:translateY(-2px);
+
+}
+
+/* Secondary */
+
+#resendButton{
+
+background:#5b5b5b;
+
+color:#ffffff;
+
+}
+
+#resendButton:hover{
+
+background:#3a3a3a;
+
+}
+
+/* Disabled */
+
+button:disabled{
+
+opacity:.6;
+
+cursor:not-allowed;
+
+transform:none;
+
+}
+
+/* ==========================================================
+   Timer
+========================================================== */
+
+.timer{
+
+margin-top:18px;
+
+font-size:14px;
+
+color:#8f8f8f;
+
+}
+
+/* ==========================================================
+   Help Box
+========================================================== */
+
+.tips{
+
+margin-top:35px;
+
+padding:22px;
+
+background:#5b5b5b;
+
+border-radius:16px;
+
+text-align:left;
+
+}
+
+.tips h3{
+
+font-size:16px;
+
+margin-bottom:12px;
+
+color:#ffffff;
+
+}
+
+.tips ul{
+
+padding-left:18px;
+
+}
+
+.tips li{
+
+margin:10px 0;
+
+font-size:14px;
+
+color:#ffffff;
+
+}
+
+/* ==========================================================
+   Status Message
+========================================================== */
+
+.status{
+
+margin-top:25px;
+
+font-weight:600;
+
+min-height:25px;
+
+font-size:15px;
+
+}
+
+.status.success{
+
+color:#16a34a;
+
+}
+
+.status.error{
+
+color:#dc2626;
+
+}
+
+/* ==========================================================
+   Back Link
+========================================================== */
+
+.back-link{
+
+display:inline-block;
+
+margin-top:30px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#4f46e5;
+
+transition:.25s;
+
+}
+
+.back-link:hover{
+
+color:#3730a3;
+
+}
+
+/* ==========================================================
+   Animation
+========================================================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:600px){
+
+.verify-card{
+
+padding:30px 22px;
+
+}
+
+.verify-card h1{
+
+font-size:28px;
+
+}
+
+#userEmail{
+
+font-size:17px;
+
+}
+
+.verify-icon{
+
+width:75px;
+
+height:75px;
+
+font-size:40px;
+
+}
+
+}
